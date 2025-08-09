@@ -10,6 +10,7 @@ The platform uniquely leverages web scraping with Puppeteer to automatically fet
 [https://aurademand.onrender.com](https://aurademand.onrender.com)
 
 
+
 ## Key Features
 
 -   **Dual User System**: Separate registration, login, and dashboard experiences for both Customers and Stores.
@@ -87,27 +88,3 @@ Follow these steps to run the project locally.
     npm start
     ```
     The server will start on `http://localhost:3000`.
-
-## API Endpoints
-
-The core functionality is exposed through the following API endpoints in `index.js`.
-
-| Method | Endpoint                        | Description                                                                 |
-| :----- | :------------------------------ | :-------------------------------------------------------------------------- |
-| **Authentication** |
-| `GET`  | `/login`                        | Authenticates a customer or store based on `userType`.                      |
-| `POST` | `/registerUser`                 | Registers a new customer account.                                           |
-| `POST` | `/registerStore`                | Registers a new store using a Google Maps URL, username, and password.      |
-| **Stores & Scraping** |
-| `GET`  | `/getStores`                    | Fetches all registered stores and their scraped details for the customer dashboard. |
-| `GET`  | `/getPlaceDetails`              | Scrapes and returns details for a given Google Maps URL.                    |
-| **Inventory Management** |
-| `GET`  | `/getStock`                     | Gets all stock items for a specific store (for the store dashboard).        |
-| `GET`  | `/getStoreStock`                | Gets all stock items for a store (for the public store page).               |
-| `POST` | `/addStock`                     | Adds a new item or updates the quantity/price of an existing item in stock. |
-| `POST` | `/removeStock`                  | Decrements the quantity of an item or removes it if the quantity reaches zero.|
-| **Purchases** |
-| `POST` | `/processPurchase`              | Processes a single-item purchase. (Legacy/Fallback)                         |
-| `POST` | `/processCartPurchase`          | Processes a multi-item purchase from the shopping cart.                     |
-| `GET`  | `/getStorePurchases`            | Fetches the purchase history for a specific store from `purchases.txt`.     |
-| `GET`  | `/getCustomerPurchases`         | Fetches the purchase history for a specific customer from `purchases.txt`.  |
