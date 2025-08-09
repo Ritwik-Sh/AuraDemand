@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraDemand</title>
+    <script src="https://kit.fontawesome.com/d63d2ac69c.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton" rel="stylesheet">
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        text: '#e2deee',
+                        background: '#0b0914',
+                        primary: '#a595da',
+                        secondary: '#3d278a',
+                        accent: '#6746d6'
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+
+<body class="bg-background text-text">
+    <!-- Why Isnt tailwind running? -->
+    <main class="flex h-[96vh] items-end flex-col">
+        <h1 class="text-[10vw]" style="font-family: 'Monoton';"><span class="text-accent">Aura</span><span>Demand</span>
+        </h1>
+        <p>Your one-stop solution for all your product needs.</p>
+        <div id="links" class="text-right">
+            <a href="/accounts/login" class="flex items-center space-x-2"><i class="fas fa-user"></i><span>Login</span></a>
+            <a href="/accounts/register" class="flex items-center space-x-2"><i class="fas fa-user-plus"></i><span>Register</span></a>
+        </div>
+    </main>
+</body>
+
+</html>
