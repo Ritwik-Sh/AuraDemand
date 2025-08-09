@@ -1,9 +1,14 @@
 # AuraDemand
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/Ritwik-Sh/AuraDemand)
+[![Hosted on Render](https://img.shields.io/badge/Hosted%20on-Render-46E3B7?logo=render&logoColor=white)](https://aurademand.onrender.com)
+
 
 AuraDemand is a full-stack digital commerce platform designed to connect local businesses with customers. It provides a seamless interface for stores to register their business, manage inventory, and track sales, while offering customers a centralized marketplace to discover local stores and purchase products.
 
 The platform uniquely leverages web scraping with Puppeteer to automatically fetch and display store details from Google Maps during registration, simplifying the onboarding process for business owners.
+
+## Try AuraDemand Out!
+[https://aurademand.onrender.com](https://aurademand.onrender.com)
+
 
 ## Key Features
 
