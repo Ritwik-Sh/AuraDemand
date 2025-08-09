@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update visual styles for options
         registrationOptions.forEach((option, index) => {
             if (registrationTypeInputs[index].checked) {
-                option.classList.add('border-accent', 'bg-accent/10');
+                option.classList.add('border-accent', 'bg-accent/10', 'animate-glow');
                 option.classList.remove('border-primary/30');
             } else {
-                option.classList.remove('border-accent', 'bg-accent/10');
+                option.classList.remove('border-accent', 'bg-accent/10', 'animate-glow');
                 option.classList.add('border-primary/30');
             }
         });
