@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Handle registration type switching
     function updateRegistrationForm() {
         const selectedType = document.querySelector('input[name="registrationType"]:checked').value;
-        
         // Update visual styles for options
         registrationOptions.forEach((option, index) => {
             if (registrationTypeInputs[index].checked) {
@@ -254,7 +253,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 // Redirect after success
                 setTimeout(() => {
-                    window.location.href = '../../dashboards/store'; // Adjust as needed
+                    window.location.href = 'paymentGateway.html'; // Adjust as needed
                 }, 1500);
             } else {
                 const errorText = await response.text();
